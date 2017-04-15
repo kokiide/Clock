@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var second1:Int!
     
     
+    
     @IBOutlet var hour2ImageView: UIImageView!
     @IBOutlet var hour1ImageView: UIImageView!
     @IBOutlet var minute2ImageView: UIImageView!
