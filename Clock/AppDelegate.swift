@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Clock
 //
-//  Created by Koki Ide on 2017/4/21.
+//  Created by Koki Ide on 2017/04/21.
 //  Copyright (c) 2017年 Koki Ide. All rights reserved.
 //
 
