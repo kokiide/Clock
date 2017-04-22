@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Clock
 //
-//  Created by Ryo Eguchi on 2015/02/20.
-//  Copyright (c) 2015年 Ryo Eguchi. All rights reserved.
+//  Created by Koki Ide on 2017/4/21.
+//  Copyright (c) 2017年 Koki Ide. All rights reserved.
 //
 
 import UIKit

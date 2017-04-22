@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Swift_Sample_Clock
 //
-//  Created by Ryo Eguchi on 2014/12/31.
-//  Copyright (c) 2014年 Ryo Eguchi. All rights reserved.
+//  Created by Koki Ide on 2017/4/21.
+//  Copyright (c) 2017年 Koki Ide. All rights reserved.
 //
 
 import UIKit
@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     var minute1:Int!
     var second2:Int!
     var second1:Int!
+    
+    var number: Int = 0
+    @IBOutlet var label: UILabel!
+    
     
 
     
@@ -41,6 +45,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        label.textColor = UIColor(red: 0.961, green: 0.957, blue: 0945, alpha: 1)
+        
         image0 = UIImage(named: "0.png")
         image1 = UIImage(named: "1.png")
         image2 = UIImage(named: "2.png")
@@ -56,7 +63,44 @@ class ViewController: UIViewController {
                                                         selector: #selector(ViewController.time),
                                                         userInfo: nil,
                                                         repeats: true)
+        super.viewDidLoad()
+}
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
+    
+    @IBAction func plus(){
+        number = number + 1
+        label.text = String(number)
+        if 10 <= number {
+            label.textColor = UIColor.red
+        }else{
+            label.textColor = UIColor(red: 0.961, green: 0.957, blue: 0945, alpha: 1)
+        }
+    }
+    
+    @IBAction func minus(){
+        number = number - 1
+        label.text = String(number)
+    }
+    
+    @IBAction func times(){
+        number = number * 2
+        label.text = String(number)
+    }
+    
+    @IBAction func devide(){
+        number = number / 2
+        label.text = String(number)
+    }
+    
+    
+    @IBAction func reset(){
+        number = 0
+        label.text = String(number)
+    }
+    
     func time(){
         let myDate: Date = Date()
         //カレンダーを取得.
@@ -308,11 +352,6 @@ class ViewController: UIViewController {
             break
         }
         
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

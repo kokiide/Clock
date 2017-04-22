@@ -24,7 +24,9 @@
 		2A3B9F761A97630600C6B0FE /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A3B9F6B1A97630600C6B0FE /* 9.png */; };
 		2A3B9F771A97630600C6B0FE /* コロン.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A3B9F6C1A97630600C6B0FE /* コロン.png */; };
 		2A81C4C01A976466000BA1D7 /* haikei.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A81C4BF1A976466000BA1D7 /* haikei.png */; };
-		8B2C3F7D1EA0AF5100AF919C /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B2C3F7C1EA0AF5100AF919C /* background.jpg */; };
+		8B31FDEB1EA203A500AACA58 /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B31FDEA1EA203A500AACA58 /* background2.png */; };
+		8B89CF821EA7536B00121037 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B89CF811EA7536B00121037 /* icon.png */; };
+		8B89CF831EA7536B00121037 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B89CF811EA7536B00121037 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +60,8 @@
 		2A3B9F6B1A97630600C6B0FE /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		2A3B9F6C1A97630600C6B0FE /* コロン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "コロン.png"; sourceTree = "<group>"; };
 		2A81C4BF1A976466000BA1D7 /* haikei.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haikei.png; sourceTree = "<group>"; };
-		8B2C3F7C1EA0AF5100AF919C /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		8B31FDEA1EA203A500AACA58 /* background2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background2.png; sourceTree = "<group>"; };
+		8B89CF811EA7536B00121037 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +124,8 @@
 		2A3B9F611A97630600C6B0FE /* images */ = {
 			isa = PBXGroup;
 			children = (
-				8B2C3F7C1EA0AF5100AF919C /* background.jpg */,
+				8B89CF811EA7536B00121037 /* icon.png */,
+				8B31FDEA1EA203A500AACA58 /* background2.png */,
 				2A81C4BF1A976466000BA1D7 /* haikei.png */,
 				2A3B9F621A97630600C6B0FE /* 0.png */,
 				2A3B9F631A97630600C6B0FE /* 1.png */,
@@ -189,6 +193,7 @@
 				TargetAttributes = {
 					2A081C291A9762CD009C8F5E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = XT2293QFD9;
 						LastSwiftMigration = 0800;
 					};
 					2A081C3E1A9762CD009C8F5E = {
@@ -226,13 +231,14 @@
 				2A3B9F741A97630600C6B0FE /* 7.png in Resources */,
 				2A3B9F6F1A97630600C6B0FE /* 2.png in Resources */,
 				2A3B9F6D1A97630600C6B0FE /* 0.png in Resources */,
+				8B31FDEB1EA203A500AACA58 /* background2.png in Resources */,
 				2A3B9F761A97630600C6B0FE /* 9.png in Resources */,
 				2A081C351A9762CD009C8F5E /* Main.storyboard in Resources */,
 				2A081C3A1A9762CD009C8F5E /* LaunchScreen.xib in Resources */,
 				2A81C4C01A976466000BA1D7 /* haikei.png in Resources */,
 				2A3B9F731A97630600C6B0FE /* 6.png in Resources */,
 				2A3B9F711A97630600C6B0FE /* 4.png in Resources */,
-				8B2C3F7D1EA0AF5100AF919C /* background.jpg in Resources */,
+				8B89CF821EA7536B00121037 /* icon.png in Resources */,
 				2A081C371A9762CD009C8F5E /* Images.xcassets in Resources */,
 				2A3B9F721A97630600C6B0FE /* 5.png in Resources */,
 				2A3B9F771A97630600C6B0FE /* コロン.png in Resources */,
@@ -245,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B89CF831EA7536B00121037 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,9 +393,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XT2293QFD9;
 				INFOPLIST_FILE = Clock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kokiide.Clock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -398,9 +407,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XT2293QFD9;
 				INFOPLIST_FILE = Clock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kokiide.Clock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
