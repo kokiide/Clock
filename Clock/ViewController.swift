@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     var number: Int = 0
     @IBOutlet var label: UILabel!
     
-    
+
 
     
     @IBOutlet var hour2ImageView: UIImageView!
